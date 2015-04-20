@@ -9,13 +9,14 @@ export default Ember.Component.extend({
   type: 'file',
   accept: null,
   cloudinaryImage: null,
+  uploadPreset: null,
 
   setupUpload: function() {
     var _this = this;
     var controller = this.get('controller');
 
     this.$().unsigned_cloudinary_upload(
-      config.CLOUDINARY_UPLOAD_PRESET, {
+      this.get('uploadPreset'), {
         cloud_name: config.CLOUDINARY_NAME
       }, {
         disableImageResize: false,
