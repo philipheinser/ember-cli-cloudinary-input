@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-cloudinary-input",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "File input with cloudinary upload.",
   "directories": {
     "doc": "doc",
